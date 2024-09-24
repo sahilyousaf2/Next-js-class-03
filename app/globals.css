@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  /* color: var(--foreground);
+  background: var(--background); */
+  font-family:poppins, Arial, Helvetica, sans-serif;
+}
+button{
+  background: rgb(108, 108, 255);
+  border: 1px solid black;
+  border-radius: 8px;
+}
+button:hover{
+  background-color: rgb(200, 200, 300);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
